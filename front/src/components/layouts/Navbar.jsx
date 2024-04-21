@@ -15,23 +15,16 @@ function Navbar(){
         </div>
         <div className={styles.navbar_option}>
         
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-            <li><a href="#">Para o celular</a></li>
-            <li><a href="#">Capas</a></li>
-            <li><a href="#">Películas</a></li>
-            <li><a href="">Fones de ouvido</a></li>
-            <li><a href="">Carregadores</a></li>
-            <li><a href="">Cabos</a></li>
-            <li><a href="">Acessórios</a></li>
-            <li><a href="">Mochilas</a></li>
-            <li><a href="">Gamer</a></li>
-        
+            <li><Link to="/">
+                Imagem aleatoria</Link></li>
+            <li><Link to="/celular">
+                Para o celular</Link></li>
+            <li><Link to="/acessorios">
+                Acessórios</Link></li>
+            <li><Link to="/fones">
+                Fones</Link></li>
+            <li><Link to="/carregadores">
+                Carregadores</Link></li>
         </div>
         
         </div>
