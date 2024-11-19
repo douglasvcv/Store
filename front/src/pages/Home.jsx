@@ -1,5 +1,11 @@
 function Home(){
-    return <div>bla testre</div>
+    return <>
+    <div>
+        <h1>Começo</h1>
+        <p>conteúdo</p>
+    </div>
+    
+    </> 
 }
 
 export default Home

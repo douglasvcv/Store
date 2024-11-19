@@ -16,7 +16,7 @@ function Navbar(){
         <div className={styles.navbar_option}>
         
             <li><Link to="/">
-                Imagem aleatoria</Link></li>
+                Home</Link></li>
             <li><Link to="/celular">
                 Para o celular</Link></li>
             <li><Link to="/acessorios">

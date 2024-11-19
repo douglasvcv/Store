@@ -1,5 +1,10 @@
 function Carregadores(){
-    return <div>bla testre</div>
+    return <>
+        <div>
+            <h1>Carregadores</h1>
+            <p>teste</p>
+        </div>
+    </>
 }
 
 export default Carregadores
