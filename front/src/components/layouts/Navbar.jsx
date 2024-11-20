@@ -17,14 +17,14 @@ function Navbar(){
         
             <li><Link to="/">
                 Home</Link></li>
-            <li><Link to="/celular">
-                Para o celular</Link></li>
-            <li><Link to="/acessorios">
-                Acessórios</Link></li>
-            <li><Link to="/fones">
-                Fones</Link></li>
-            <li><Link to="/carregadores">
-                Carregadores</Link></li>
+            <li><Link to="/masculino">
+                Masculino</Link></li>
+            <li><Link to="/feminino">
+                Feminino</Link></li>
+            <li><Link to="/joias">
+                Joias</Link></li>
+            <li><Link to="/eletronicos">
+                Eletrônicos</Link></li>
         </div>
         
         </div>

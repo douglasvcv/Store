@@ -4,10 +4,10 @@ import {BrowserRouter as Router,Routes, Route} from 'react-router-dom'
 import './App.css'
 import Navbar from './components/layouts/Navbar'
 import Home from './pages/Home'
-import Celulares from './pages/Celulares'
-import Carregadores from './pages/Carregadores'
-import Acessorios from './pages/Acessorios'
-import Fones from './pages/Fones'
+import Masculino from './pages/Maculino'
+import Joias from './pages/Joias'
+import Feminino from './pages/Feminino'
+import Eletronicos from './pages/Eletronicos'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +18,10 @@ function App() {
      <Navbar></Navbar>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/celular' element={<Celulares/>}/>
-        <Route exact path='/acessorios' element={<Acessorios/>}/>
-        <Route exact path='/fones' element={<Fones/>}/>
-        <Route exact path='/carregadores' element={<Carregadores/>}/>
+        <Route exact path='/eletronicos' element={<Eletronicos/>}/>
+        <Route exact path='/masculino' element={<Masculino/>}/>
+        <Route exact path='/joias' element={<Joias/>}/>
+        <Route exact path='/feminino' element={<Feminino/>}/>
       </Routes>
       
     </Router>
