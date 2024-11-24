@@ -1,10 +1,10 @@
+import ApiCategory from "../api/ApiCategory"
+
 function Eletronicos(){
    
    
    return <>
-    <div>
-        <h1>Eletronicos</h1>
-    </div>
+   <ApiCategory category={"men's clothing"} Title={"Eletrônicos"}/>
     </>
 }
 
