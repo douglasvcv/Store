@@ -2,42 +2,28 @@ import { useEffect, useState } from "react"
 
 
 function Eletronicos(){
-   const [data, setData] = useState([])
-   const [loading, setLoading] = useState(true)
-   const [erro, setErro] = useState(null)
-
-   useEffect(()=> {
-    const fetchData = async ()=>{
-        try {
-            const response = await fetch(`https://fakestoreapi.com/products/category/men's clothing`)
-            if(!response.ok){
-                setLoading(false)
-                console.log("Erro na requisição")
-                
-            }
-            const data = response.json()
-            setData(data)
-            setLoading(false)
-        } catch (error) {
-            setErro(error)
-        }
+  const [products, setProducts] = useState([])
+  useEffect(
+    () =>{
+        fetch("https://fakestoreapi.com/products/category/electronics")
+        .then((response)=>{response.json()})
+        .then((data)=>setProducts(data))
+        .catch((error)=>console.error(`Erro ao buscar dados ${error}`))
     }
-
-    fetchData()
-   }, [])
-   if(loading) return <p>Carregando...</p>
-   if(erro) return <p>Erro: {erro}</p>
-   return <>
+  ,[])
+  return(
     <div>
         <ul>
-            {data.map(
-                (item) => {
-                    <li>Id:{item.id} </li>
-                }
-            )}
+            {products.map((product)=>(
+                <li key={product.id}>
+                    <p>{product.title}</p>
+                    <p>Preço: R${product.price}</p>
+                    <img src={product.image} alt={product.title} width="80"/>
+                </li>
+            ))}
         </ul>
     </div>
-    </>
+  )
 }
 
 export default Eletronicos
