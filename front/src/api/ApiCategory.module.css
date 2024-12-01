@@ -1,0 +1,33 @@
+.product_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    width: 80vw;
+    margin: 10px auto;
+}
+.content_container h1{
+    margin:20px 10px;
+    text-align: center;
+    
+}
+.product_container li{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+}
+@media(max-width:1500px){
+    .product_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100vw;
+    }
+}

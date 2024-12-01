@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import styles from './ApiCategory.module.css'
 
 function ApiCategory(props){
     const {category="", Title = "Produtos"} = props || {}
@@ -28,14 +29,14 @@ function ApiCategory(props){
     if(loading) return <p>Carregando</p>    
 
     return(
-      <div>
+      <div className={styles.content_container}>
         <h1>{Title}</h1>
-          <ul>
+          <ul className={styles.product_container}>
             {products.map((product)=>(
                   <li key={product.id}>
+                      <img src={product.image} alt={product.title} width="80"/>
                       <p>{product.title}</p>
                       <p>Preço: R${product.price}</p>
-                      <img src={product.image} alt={product.title} width="80"/>
                   </li>
               ))}
           </ul>
