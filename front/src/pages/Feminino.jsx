@@ -1,7 +1,9 @@
+import ApiCategory from "../api/ApiCategory"
+
 function Feminino(){
     return <>
     <div>
-        <h1>Feminino</h1>
+    <ApiCategory category="women's clothing" Title="Moda Feminina"/>
     </div>
     </>
     

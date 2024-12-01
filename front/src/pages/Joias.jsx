@@ -1,7 +1,9 @@
+import ApiCategory from "../api/ApiCategory"
+
 function Joias(){
     return <>
     <div>
-        <h1>Joias</h1>
+    <ApiCategory category="jewelery" Title="Joias"/>
     </div>
     </>
 }
