@@ -24,6 +24,10 @@
     width: 200px;
     height: 300px;
 }
+.product_container li:hover{
+    background: rgb(95, 2, 2);
+    transition: ease-in-out 0.7s;
+}
 @media(max-width:1500px){
     .product_container{
         display: grid;
