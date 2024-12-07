@@ -5,6 +5,7 @@ function ApiCategory(props){
     const {category="", Title = "Produtos"} = props || {}
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
+    const [click, setClick] = useState(0)
     useEffect(()=>{
   
       async function getApi(){
@@ -25,6 +26,11 @@ function ApiCategory(props){
       getApi()
     }
     ,[category])
+
+    useEffect(()=>{
+
+    }, [])
+
 
     if(loading) return <p>Carregando</p>    
 
